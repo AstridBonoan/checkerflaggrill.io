@@ -9,6 +9,7 @@ import { Navbar } from './components/Navbar'
 import { OrderSection } from './components/OrderSection'
 import { QuickInfoBar } from './components/QuickInfoBar'
 import { StickyOrderCTA } from './components/StickyOrderCTA'
+import { Watermark } from './components/Watermark'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       </main>
       <Footer />
       <StickyOrderCTA />
+      <Watermark />
     </>
   )
 }
