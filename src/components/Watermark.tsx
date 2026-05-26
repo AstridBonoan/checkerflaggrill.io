@@ -1,4 +1,4 @@
-const watermarkSrc = `${import.meta.env.BASE_URL}bonoan-labs-watermark.png`
+import watermarkSrc from '../assets/bonoan-labs-watermark.png'
 
 export function Watermark() {
   return (
@@ -13,9 +13,6 @@ export function Watermark() {
           alt="Bonoan Labs"
           className="h-11 w-auto sm:h-12"
           draggable={false}
-          onError={(e) => {
-            e.currentTarget.style.display = 'none'
-          }}
         />
       </div>
     </div>
