@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { RESTAURANT } from '../data/menu'
 import { useScrollFade } from '../hooks/useScrollFade'
+import { SocialLinks } from './SocialLinks'
 
 export function LocationContact() {
   const sectionRef = useScrollFade<HTMLElement>()
@@ -47,6 +48,10 @@ export function LocationContact() {
                 >
                   {RESTAURANT.phone}
                 </a>
+              </div>
+              <div className="mt-6 border-t border-gray-100 pt-5">
+                <p className="text-sm font-semibold text-grill-dark">Follow us</p>
+                <SocialLinks variant="light" className="mt-3" />
               </div>
             </div>
           </div>

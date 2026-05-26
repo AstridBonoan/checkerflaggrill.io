@@ -20,7 +20,7 @@ export const menuCategories: MenuCategory[] = [
     description: 'Eggs, platters, and morning classics',
     icon: '🍳',
     image:
-      'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&q=80',
+      'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&h=400&q=80',
     items: [
       {
         name: 'Bacon Egg & Cheese',
@@ -55,7 +55,7 @@ export const menuCategories: MenuCategory[] = [
     description: 'Grilled favorites and hearty sandwiches',
     icon: '🍔',
     image:
-      'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80',
+      'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&h=400&q=80',
     items: [
       {
         name: 'Checker Flag Burger',
@@ -90,7 +90,7 @@ export const menuCategories: MenuCategory[] = [
     description: 'Burritos, tacos, and south-of-the-border plates',
     icon: '🌮',
     image:
-      'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80',
+      'https://images.unsplash.com/photo-1551504734-5ee1d4fb0f8f?auto=format&fit=crop&w=600&h=400&q=80',
     items: [
       {
         name: 'Breakfast Burrito',
@@ -125,7 +125,7 @@ export const menuCategories: MenuCategory[] = [
     description: 'Fluffy eggs with your choice of fillings',
     icon: '🥚',
     image:
-      'https://images.unsplash.com/photo-1482049016688-2d3e1b31134b?w=400&q=80',
+      'https://images.unsplash.com/photo-1613769049999-d1a95d0be3ea?auto=format&fit=crop&w=600&h=400&q=80',
     items: [
       {
         name: 'Western Omelette',
@@ -155,7 +155,7 @@ export const menuCategories: MenuCategory[] = [
     description: 'Fresh greens and hearty bowls',
     icon: '🥗',
     image:
-      'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80',
+      'https://images.unsplash.com/photo-1546069901-ba9599a63e2c?auto=format&fit=crop&w=600&h=400&q=80',
     items: [
       {
         name: 'Cobb Salad',
@@ -185,7 +185,7 @@ export const menuCategories: MenuCategory[] = [
     description: 'Sweet finishes to your meal',
     icon: '🍰',
     image:
-      'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&q=80',
+      'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&h=400&q=80',
     items: [
       {
         name: 'Chocolate Cake',
@@ -210,7 +210,7 @@ export const menuCategories: MenuCategory[] = [
     description: 'Coffee, sodas, and refreshments',
     icon: '☕',
     image:
-      'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80',
+      'https://images.unsplash.com/photo-1514431164697-729b57a751a0?auto=format&fit=crop&w=600&h=400&q=80',
     items: [
       { name: 'Coffee', description: 'Regular or decaf', price: '$2.99' },
       { name: 'Fresh Orange Juice', description: '16 oz', price: '$4.99' },
@@ -226,35 +226,35 @@ export const featuredItems = [
     description: 'Our signature half-pound grill burger',
     price: '$14.99',
     image:
-      'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80',
+      'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&h=400&q=80',
   },
   {
     name: 'Chicken & Waffles',
     description: 'Crispy chicken with Belgian waffle',
     price: '$15.99',
     image:
-      'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&q=80',
+      'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&h=400&q=80',
   },
   {
     name: 'Breakfast Burrito',
     description: 'Loaded with eggs, cheese, and home fries',
     price: '$13.93',
     image:
-      'https://images.unsplash.com/photo-1626700051175-6818013e1d2f?w=600&q=80',
+      'https://images.unsplash.com/photo-1626700051175-6818013e1d2f?auto=format&fit=crop&w=600&h=400&q=80',
   },
   {
     name: 'Bacon Egg & Cheese',
     description: 'NYC classic on your choice of bread',
     price: '$11.38',
     image:
-      'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=80',
+      'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=400&q=80',
   },
   {
     name: 'Philly Cheesesteak',
     description: 'Steak, onions, melted cheese on hoagie',
     price: '$16.01',
     image:
-      'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=600&q=80',
+      'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&h=400&q=80',
   },
 ]
 
@@ -281,4 +281,21 @@ export const RESTAURANT = {
     weekend: 'Sat–Sun: 8:30 AM – 8:30 PM',
     note: 'Hours may vary on holidays',
   },
+  socials: [
+    {
+      name: 'Instagram' as const,
+      url: 'https://www.instagram.com/nyc_checkerflag/',
+      handle: '@nyc_checkerflag',
+    },
+    {
+      name: 'Facebook' as const,
+      url: 'https://www.facebook.com/profile.php?id=61583555093349',
+      handle: 'NYC Checker Flag Grill',
+    },
+    {
+      name: 'TikTok' as const,
+      url: 'https://www.tiktok.com/@nycheckerflagrill',
+      handle: '@nycheckerflagrill',
+    },
+  ],
 }

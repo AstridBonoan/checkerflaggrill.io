@@ -1,5 +1,6 @@
 import { RESTAURANT } from '../data/menu'
 import { Logo } from './Logo'
+import { SocialLinks } from './SocialLinks'
 
 export function Footer() {
   const year = new Date().getFullYear()
@@ -16,6 +17,10 @@ export function Footer() {
             <a href={RESTAURANT.phoneHref} className="hover:text-white">
               {RESTAURANT.phone}
             </a>
+            <br />
+            <a href={`mailto:${RESTAURANT.email}`} className="hover:text-white">
+              {RESTAURANT.email}
+            </a>
           </p>
         </div>
 
@@ -29,24 +34,27 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="font-semibold text-white">Follow</p>
-          <div className="mt-3 flex gap-3">
-            {['Facebook', 'Instagram', 'Yelp'].map((network) => (
-              <a
-                key={network}
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 text-xs font-medium text-white transition-colors hover:bg-white/20"
-                aria-label={network}
-              >
-                {network[0]}
-              </a>
+          <p className="font-semibold text-white">Follow us</p>
+          <SocialLinks className="mt-3" />
+          <ul className="mt-4 space-y-1 text-sm">
+            {RESTAURANT.socials.map((social) => (
+              <li key={social.name}>
+                <a
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 transition-colors hover:text-white"
+                >
+                  {social.handle}
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
 
       <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-gray-500 sm:px-6">
-        © {year} NYC Checker Flag Grill. All rights reserved. Demo redesign.
+        © {year} NYC Checker Flag Grill. All rights reserved.
       </div>
     </footer>
   )

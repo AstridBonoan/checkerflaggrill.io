@@ -1,5 +1,6 @@
 import { featuredItems } from '../data/menu'
 import { useScrollFade } from '../hooks/useScrollFade'
+import { FoodImage } from './FoodImage'
 
 export function FeaturedItems() {
   const sectionRef = useScrollFade<HTMLElement>()
@@ -17,11 +18,10 @@ export function FeaturedItems() {
               className="w-[260px] shrink-0 snap-start overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm sm:w-[280px]"
             >
               <div className="h-40 overflow-hidden">
-                <img
+                <FoodImage
                   src={item.image}
                   alt={item.name}
                   className="h-full w-full object-cover"
-                  loading="lazy"
                 />
               </div>
               <div className="p-4">

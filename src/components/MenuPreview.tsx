@@ -1,5 +1,6 @@
 import { menuCategories } from '../data/menu'
 import { useScrollFade } from '../hooks/useScrollFade'
+import { FoodImage } from './FoodImage'
 import { OrderDeliveryButtons } from './OrderDeliveryButtons'
 
 export function MenuPreview() {
@@ -34,11 +35,11 @@ export function MenuPreview() {
               className="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md"
             >
               <div className="relative h-32 overflow-hidden bg-gray-100">
-                <img
+                <FoodImage
                   src={cat.image}
-                  alt=""
+                  alt={cat.title}
                   className="h-full w-full object-cover"
-                  loading="lazy"
+                  fallbackIcon={cat.icon}
                 />
                 <span className="absolute left-3 top-3 flex h-10 w-10 items-center justify-center rounded-lg bg-white/90 text-xl shadow-sm">
                   {cat.icon}
