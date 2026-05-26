@@ -8,7 +8,7 @@ export function OrderSection() {
     <section
       id="order"
       ref={sectionRef}
-      className="fade-in-section scroll-mt-20 border-y border-gray-200 bg-white px-4 py-12 sm:px-6"
+      className="fade-in-section scroll-mt-20 border-y border-gray-200 px-4 py-12 sm:px-6"
     >
       <div className="mx-auto max-w-6xl lg:flex lg:items-center lg:justify-between lg:gap-12">
         <div className="text-center lg:text-left">

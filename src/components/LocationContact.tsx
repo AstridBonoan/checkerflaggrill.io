@@ -16,7 +16,7 @@ export function LocationContact() {
     <section
       id="contact"
       ref={sectionRef}
-      className="fade-in-section scroll-mt-20 bg-grill-light px-4 py-16 sm:px-6"
+      className="fade-in-section scroll-mt-20 px-4 py-16 sm:px-6"
     >
       <div className="mx-auto max-w-6xl">
         <h2 className="text-2xl font-bold text-grill-dark sm:text-3xl">Location & Contact</h2>

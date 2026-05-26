@@ -1,10 +1,11 @@
 import { RESTAURANT } from '../data/menu'
 import { Logo } from './Logo'
 import { OrderDeliveryButtons } from './OrderDeliveryButtons'
+import { SectionWatermark } from './SectionWatermark'
 
 export function Hero() {
   return (
-    <section className="relative min-h-[70vh] pt-16">
+    <section className="relative min-h-[70vh] overflow-hidden pt-16">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -15,7 +16,8 @@ export function Hero() {
         aria-label="Grill food background"
       />
       <div className="absolute inset-0 bg-black/55" />
-      <div className="relative mx-auto flex min-h-[calc(70vh-4rem)] max-w-6xl flex-col justify-center px-4 py-16 sm:px-6">
+      <SectionWatermark onDark />
+      <div className="relative z-10 mx-auto flex min-h-[calc(70vh-4rem)] max-w-6xl flex-col justify-center px-4 py-16 sm:px-6">
         <Logo className="mb-4 h-20 w-20 sm:h-24 sm:w-24" />
         <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-grill-orange">
           Maspeth, Queens

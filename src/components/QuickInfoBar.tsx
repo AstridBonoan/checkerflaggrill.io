@@ -21,7 +21,7 @@ export function QuickInfoBar() {
   ]
 
   return (
-    <section className="border-y border-gray-200 bg-grill-light" aria-label="Quick info">
+    <section className="border-y border-gray-200" aria-label="Quick info">
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-px bg-gray-200 sm:grid-cols-4">
         {items.map((item) => {
           const content = (

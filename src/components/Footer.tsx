@@ -6,7 +6,7 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer id="hours" className="scroll-mt-20 border-t border-gray-200 bg-grill-dark text-gray-300">
+    <footer id="hours" className="scroll-mt-20 border-t border-gray-200 text-gray-300">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:grid-cols-3 sm:px-6">
         <div>
           <Logo className="h-14 w-14" />

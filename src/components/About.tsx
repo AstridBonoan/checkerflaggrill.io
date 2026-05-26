@@ -7,7 +7,7 @@ export function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="fade-in-section scroll-mt-20 border-t border-gray-200 bg-white px-4 py-16 sm:px-6"
+      className="fade-in-section scroll-mt-20 border-t border-gray-200 px-4 py-16 sm:px-6"
     >
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-2xl font-bold text-grill-dark sm:text-3xl">About Us</h2>

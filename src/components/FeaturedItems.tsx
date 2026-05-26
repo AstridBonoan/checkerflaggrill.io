@@ -6,7 +6,7 @@ export function FeaturedItems() {
   const sectionRef = useScrollFade<HTMLElement>()
 
   return (
-    <section ref={sectionRef} className="fade-in-section bg-grill-light px-4 py-16 sm:px-6">
+    <section ref={sectionRef} className="fade-in-section px-4 py-16 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-2xl font-bold text-grill-dark sm:text-3xl">Popular Dishes</h2>
         <p className="mt-1 text-grill-gray">Customer favorites at the grill</p>
