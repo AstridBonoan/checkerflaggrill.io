@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { RESTAURANT } from '../data/menu'
+import { Logo } from './Logo'
 import { OrderDeliveryButtons } from './OrderDeliveryButtons'
 
 const navLinks = [
@@ -36,16 +37,8 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <a href="#" className="flex items-center gap-2" onClick={close}>
-          <span
-            className="flex h-9 w-9 items-center justify-center rounded-md bg-grill-red text-sm font-bold text-white"
-            aria-hidden
-          >
-            CF
-          </span>
-          <span className="text-sm font-bold leading-tight text-grill-dark sm:text-base">
-            NYC Checker Flag Grill
-          </span>
+        <a href="#" className="flex items-center" onClick={close}>
+          <Logo className="h-10 w-10 sm:h-11 sm:w-11" showName />
         </a>
 
         <nav className="hidden items-center gap-5 lg:flex" aria-label="Main">
