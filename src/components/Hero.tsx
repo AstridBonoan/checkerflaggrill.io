@@ -1,4 +1,5 @@
 import { RESTAURANT } from '../data/menu'
+import { OrderDeliveryButtons } from './OrderDeliveryButtons'
 
 export function Hero() {
   return (
@@ -23,7 +24,7 @@ export function Hero() {
         <p className="mt-4 max-w-lg text-lg text-gray-200">
           Comfort Food • Breakfast • Burgers • Mexican Favorites
         </p>
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
             href="#menu"
             className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-grill-dark transition-colors hover:bg-gray-100"
@@ -31,13 +32,17 @@ export function Hero() {
             View Menu
           </a>
           <a
-            href={RESTAURANT.orderUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg bg-grill-red px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#a01822]"
+            href={RESTAURANT.phoneHref}
+            className="rounded-lg border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
           >
-            Order Online
+            Call to Order
           </a>
+        </div>
+        <div className="mt-6 max-w-md">
+          <p className="mb-3 text-xs font-medium uppercase tracking-wider text-gray-300">
+            Order delivery or pickup
+          </p>
+          <OrderDeliveryButtons layout="grid" size="md" />
         </div>
       </div>
     </section>

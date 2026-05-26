@@ -266,7 +266,13 @@ export const RESTAURANT = {
   address: '70-11 Grand Ave',
   city: 'Maspeth, NY 11378',
   fullAddress: '70-11 Grand Ave, Maspeth, NY 11378',
-  orderUrl: 'https://www.ubereats.com/store/nyc-checker-flag-grill-70-11-grand-avenue/Jk8IQFIoULaSIiLY_j6TTw',
+  uberEatsUrl:
+    'https://www.ubereats.com/store/nyc-checker-flag-grill-70-11-grand-avenue/Jk8IQFIoULaSIiLY_j6TTw',
+  doorDashUrl:
+    'https://www.doordash.com/store/nyc-checker-flag-grill-maspeth-43299335/107464146/',
+  /** @deprecated Use uberEatsUrl or doorDashUrl */
+  orderUrl:
+    'https://www.ubereats.com/store/nyc-checker-flag-grill-70-11-grand-avenue/Jk8IQFIoULaSIiLY_j6TTw',
   mapsEmbed:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.0!2d-73.899!3d40.726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNzDCsDQzJzMzLjYiTiA3M8KwNTMnNTYuNCJX!5e0!3m2!1sen!2sus!4v1',
   mapsLink: 'https://maps.google.com/?q=70-11+Grand+Ave+Maspeth+NY+11378',

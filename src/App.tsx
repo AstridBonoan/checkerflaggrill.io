@@ -6,6 +6,7 @@ import { Hero } from './components/Hero'
 import { LocationContact } from './components/LocationContact'
 import { MenuPreview } from './components/MenuPreview'
 import { Navbar } from './components/Navbar'
+import { OrderSection } from './components/OrderSection'
 import { QuickInfoBar } from './components/QuickInfoBar'
 import { StickyOrderCTA } from './components/StickyOrderCTA'
 
@@ -16,6 +17,7 @@ function App() {
       <main className="pb-20 md:pb-0">
         <Hero />
         <QuickInfoBar />
+        <OrderSection />
         <MenuPreview />
         <FeaturedItems />
         <FullMenu />

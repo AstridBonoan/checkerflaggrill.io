@@ -1,5 +1,6 @@
 import { menuCategories } from '../data/menu'
 import { useScrollFade } from '../hooks/useScrollFade'
+import { OrderDeliveryButtons } from './OrderDeliveryButtons'
 
 export function MenuPreview() {
   const sectionRef = useScrollFade<HTMLElement>()
@@ -16,6 +17,14 @@ export function MenuPreview() {
           <p className="mt-2 text-grill-gray">
             Browse by category — tap to see full items below
           </p>
+        </div>
+
+        <div className="mb-10 flex flex-col items-center gap-4 rounded-xl border border-gray-200 bg-grill-light p-6 sm:flex-row sm:justify-between">
+          <p className="text-center text-sm text-grill-gray sm:text-left">
+            <span className="font-semibold text-grill-dark">Ready to order?</span> Delivery and
+            pickup via Uber Eats or DoorDash.
+          </p>
+          <OrderDeliveryButtons layout="row" size="md" className="w-full max-w-sm shrink-0" />
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import { RESTAURANT } from '../data/menu'
+import { OrderDeliveryButtons } from './OrderDeliveryButtons'
 
 const navLinks = [
   { href: '#menu', label: 'Menu' },
+  { href: '#order', label: 'Order' },
   { href: '#about', label: 'About' },
   { href: '#hours', label: 'Hours' },
   { href: '#contact', label: 'Contact' },
@@ -46,7 +48,7 @@ export function Navbar() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-6 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-5 lg:flex" aria-label="Main">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -57,18 +59,17 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href={RESTAURANT.orderUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg bg-grill-red px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#a01822]"
+            href={RESTAURANT.phoneHref}
+            className="rounded-lg border border-gray-300 px-3 py-2 text-sm font-semibold text-grill-dark transition-colors hover:bg-gray-50"
           >
-            Order
+            Call
           </a>
+          <OrderDeliveryButtons inline />
         </nav>
 
         <button
           type="button"
-          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-gray-200 md:hidden"
+          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-gray-200 lg:hidden"
           aria-expanded={open}
           aria-label={open ? 'Close menu' : 'Open menu'}
           onClick={() => setOpen((v) => !v)}
@@ -87,7 +88,7 @@ export function Navbar() {
 
       {open && (
         <nav
-          className="border-t border-gray-100 bg-white px-4 py-4 md:hidden"
+          className="border-t border-gray-100 bg-white px-4 py-4 lg:hidden"
           aria-label="Mobile"
         >
           <ul className="flex flex-col gap-1">
@@ -104,14 +105,13 @@ export function Navbar() {
             ))}
             <li className="pt-2">
               <a
-                href={RESTAURANT.orderUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block rounded-lg bg-grill-red px-4 py-3 text-center text-base font-semibold text-white"
+                href={RESTAURANT.phoneHref}
+                className="mb-3 block rounded-lg border border-gray-300 px-4 py-3 text-center text-base font-semibold text-grill-dark"
                 onClick={close}
               >
-                Order Online
+                Call to Order
               </a>
+              <OrderDeliveryButtons layout="stack" size="md" />
             </li>
           </ul>
         </nav>
