@@ -24,7 +24,7 @@ export function LocationContact() {
           <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
             <iframe
               title="NYC Checker Flag Grill on Google Maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8!2d-73.8994!3d40.7262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f8b8b8b8b8b%3A0x0!2s70-11%20Grand%20Ave%2C%20Maspeth%2C%20NY%2011378!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              src="https://maps.google.com/maps?q=70-11+Grand+Ave,+Maspeth,+NY+11378&z=15&output=embed"
               className="h-64 w-full border-0 sm:h-80"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
